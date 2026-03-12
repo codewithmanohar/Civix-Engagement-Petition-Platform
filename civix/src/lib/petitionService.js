@@ -2,7 +2,7 @@
 import axios from "axios";
 import api from "./api";
 
-const API_URL = `${process.env.VITE_API_URL}/api/petition`;
+const API_URL = `${import.meta.env.VITE_API_URL}/petition`;
 
 // Fetch all petitions
 export async function getAllPetitions() {
